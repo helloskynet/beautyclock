@@ -1,0 +1,70 @@
+html,body{
+    margin-top: 0;
+    padding:0;
+}
+@font-face {
+    font-family: qingkai;
+    src: url("font/qingkai.ttf");
+}
+@font-face {
+    font-family: miniying;
+    src: url("font/miniying.ttf");
+}
+#clock-main{
+    position: relative;
+    width:300px;
+    height:300px;
+    background: url("../cimg/1.png");
+    background-size: contain;
+    transition: background 0.2s;
+}
+#clock-time{
+    position: absolute;
+    font-family: miniying;
+    font-size: 25px;
+    font-weight: bold;
+    //color: white;
+    top:260px;
+    left: 65px;
+    transform: rotateZ(-10deg);
+}
+#page-clock{
+    position: relative;
+    margin-left: 275px;
+    margin-top: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+
+}
+#first{
+    position: relative;
+    width: 30px;
+    height: 30px;
+     transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+#page-first {
+    position: absolute;
+    top: 0;
+    width: 25px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    background: #ff71c7;
+    transform: rotateX(180deg);
+    transition: transform 0.5s,z-index 1s;
+}
+#page-second{
+    position: absolute;
+    top: 0;
+    width: 25px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    background: #abffe9;
+    transform: rotateX(0deg);
+}
